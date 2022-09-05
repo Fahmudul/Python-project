@@ -3,13 +3,13 @@ from tkinter import *
 import os
 
 def restart():
-    os.system("restart /r /t 1")
+    os.system("shutdown /r /t 1")
 def restart_time():
-    os.system("restart /r /t 20")
+    os.system("shutdown /r /t 20")
 def log_out():
-    os.system("restart -l")
+    os.system("shutdown -l")
 def shutdown():
-    os.system("restart /s /t 1")
+    os.system("shutdown /s /t 1")
 
 st = Tk()
 st.title("Shutdown app")
